@@ -1,5 +1,5 @@
 {
-  "name": "egg-restapi-module-tool",
+  "name": "ezland-data-analysis",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,8 @@
     "build": "webpack  --progress --config ./static/build/webpack.prod.config.js && node ./scripts/copy.js",
     "server": "egg-bin dev",
     "debug": "egg-bin debug",
-    "test": "egg-bin test"
+    "test": "egg-bin test",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -72,6 +73,7 @@
     "egg-view-nunjucks": "^2.0.0",
     "egg-view-react": "^0.0.1",
     "mysql": "^2.13.0",
+    "mysql2": "^1.4.0",
     "pg": "^7.1.0",
     "pg-hstore": "^2.3.2",
     "rc-tween-one": "^1.2.5",

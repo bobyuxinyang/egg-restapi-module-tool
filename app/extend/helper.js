@@ -1,4 +1,4 @@
-const moment = require('moment');
+const moment = require('moment')
 exports.relativeTime = time => moment(new Date(time * 1000)).fromNow();
 exports.inarray = (arr, obj)=>{  
     var i = arr.length;  
@@ -9,3 +9,6 @@ exports.inarray = (arr, obj)=>{
     }  
     return false;  
 }  
+exports.getDateCount = (date) => {
+  return Math.trunc(date.getTime() / 1000 /60 /60 /24)
+}
